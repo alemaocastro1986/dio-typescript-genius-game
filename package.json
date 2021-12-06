@@ -1,0 +1,18 @@
+{
+  "name": "typescript-essentials",
+  "version": "1.0.0",
+  "description": "basic of typescript language",
+  "main": "index.js",
+  "repository": "git@github.com:alemaocastro1986/dio-eduzz-typescript.git",
+  "author": "Andrius Cunha Castro",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "license": "MIT",
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.0.1",
+    "typescript": "^4.5.2"
+  }
+}

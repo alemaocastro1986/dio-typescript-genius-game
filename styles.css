@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  font-family: "Genos", sans-serif;
+}
+
+button {
+  font-family: "Genos", sans-serif;
+}
+
+header {
+  height: 60px;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+}
+
+.logo > div {
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  margin-right: 0.5rem;
+}
+
+.logo > div img {
+  width: 100%;
+  height: 100%;
+}
+
+header > div strong {
+  font-size: 2rem;
+}
+
+header .sci {
+  display: flex;
+  align-items: center;
+}
+
+header .sci a {
+  padding: 2px;
+  margin: 0 4px;
+  transform: scale(0.6);
+  transition: transform 0.2s;
+}
+.sci a:hover {
+  transform: scale(0.7);
+}
+
+header .sci img {
+  max-width: 32px;
+}
+
+.main-game {
+  height: calc(100vh - 60px);
+  width: 100vw;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.genius {
+  display: grid;
+  grid-template-areas:
+    "A1 A2"
+    "A3 A4";
+  grid-gap: 10px;
+  border: 10px solid #131314;
+  background-color: #131314;
+  border-radius: 100%;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.btn {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.btn-blue {
+  grid-area: A4;
+  background: blue;
+}
+
+.btn-red {
+  grid-area: A2;
+  background: red;
+}
+
+.btn-yellow {
+  grid-area: A3;
+  background: yellow;
+}
+
+.btn-green {
+  grid-area: A1;
+  background: green;
+}
+
+.selected {
+  opacity: 1;
+}
+
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 250px;
+  height: 250px;
+
+  background: #131314;
+  border-radius: 100%;
+}
+
+.info button {
+  margin: 16px 85px 0;
+  width: 80px;
+  height: 32px;
+
+  background: rgb(68, 146, 68);
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 0;
+
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 60px;
+}
+
+.score div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score small {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  /* margin-bottom: 4px; */
+  color: white;
+}
+
+.score strong {
+  margin-top: -8px;
+  font-weight: 700;
+  color: white;
+  font-size: 28px;
+}
+
+.score div:nth-child(1) strong {
+  color: goldenrod;
+}
+
+.score div:not(.score div:nth-child(1)) {
+  margin-top: 8px;
+}
+
+.not-visible {
+  display: none !important;
+}
